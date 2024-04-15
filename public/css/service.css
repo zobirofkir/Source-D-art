@@ -1,0 +1,51 @@
+/* body, html {
+    margin: 0;
+    background: -webkit-radial-gradient(center, ellipse cover, #111 10%, #333 90%);
+  } */
+  
+  canvas {
+    display: block;
+    /* cursor: crosshair; */
+    width: 100% !important;
+    z-index: 1;
+    
+    
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    /* height: 80pt; */
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+    z-index: 2;
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 10vmin;
+    text-align: center;
+    user-select: none;
+}
+
+#container #text1 img, #container #text2 img{
+width: 20%;
+margin-bottom: 100px;
+height: auto;
+filter: drop-shadow(-2px 4px 20px white);
+}
