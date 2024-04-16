@@ -47,7 +47,7 @@ class ContactController extends Controller
     
         if ($data->save()) {
             // Send email
-            Mail::to('contact@zobirofkir.com')->send(new ContactFormSubmitted($data));
+            Mail::to('sourcedart.itservices.event@gmail.com')->send(new ContactFormSubmitted($data));
     
             $response = "We will contact you soon";
             return view('welcome', compact('response'));

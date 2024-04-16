@@ -61,7 +61,7 @@
                                     <li class="has-menu-items"><a href="{{url('/')}}#sayhello">Galeries</a>
                                         <ul class="sub-menu">
                                             <li><a href="./galeries/">Photos</a></li>
-                                            <li><a href="{{route('video')}}">Vidéos</a></li>
+                                            <li><a href="/videos/">Vidéos</a></li>
                                         </ul>
                                     </li>
                                     <li class=""><a href="{{url('/')}}#contact">Contact</a></li>

@@ -1,12 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Photos</title>
+		<title>Videos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="assets/js/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+		<style>
+		/* Add your CSS styles for the thumbnails here */
+		.thumb {
+			display: inline-block;
+			margin: 10px;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -30,18 +38,21 @@
 
 					
 
-						<script>
-							for(i=1;i<12;i++){
-								$('#main').append(`<article class="thumb">
-													<a href="img/gallery/qualite/${i}.mp4">
-													<img src="img/gallery/compr/${i}.png" alt="" />
-													</a>
-													<h2></h2>
-													<p></p>
-												   </article>`)
-							}
-						</script>
-						
+					<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+					<script>
+					$(document).ready(function() {
+						for (let i = 1; i < 12; i++) {
+						$('#main').append(`<article class="thumb">
+												<a data-fancybox href="img/gallery/qualite/${i}.mp4">
+												<img src="img/gallery/compr/${i}.png" alt="" />
+												</a>
+												<h2>Video ${i}</h2>
+												<p>Description</p>
+											</article>`);
+						}
+					});
+					</script>						
 						
 					</div>
 
@@ -51,7 +62,7 @@
 						
 							<nav class="navbar">
 								
-								<ul class="ul">
+								<!-- <ul class="ul">
 									<li><a href="../">Accueil</a></li>
 									<li><a href="../apropos.php">À propos </a></li>
 									<li><a href="../index.php#team">Nos-Équipe</a></li>
@@ -60,7 +71,7 @@
 									<li><a href="#">Videos</a></li>
 									<li><a href="../index.php#contact">Contact</a></li>
 
-								</ul>
+								</ul> -->
 							</nav>
 						<div class="inner split">
 							<div>

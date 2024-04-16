@@ -22,7 +22,7 @@
         <link rel="stylesheet" type="text/css" href="css/preset.css" >
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-               
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css">
         <!-- Favicon Icon -->
         <link rel="icon"  type="image/png" href="images/favicon.png">
     </head>
@@ -270,7 +270,7 @@
             <div class="ourServices">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-md d-flex align-items-stretch ftco-animate">
                             <div class="singleService">
                                 <div class="serImg">
                                     <img src="images/services/1.png" alt="">
@@ -280,7 +280,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-md d-flex align-items-stretch ftco-animate">
                             <div class="singleService">
                                 <div class="serImg">
                                     <img src="images/services/4.png" alt="">
@@ -290,7 +290,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-md d-flex align-items-stretch ftco-animate">
                             <div class="singleService">
                                 <div class="serImg">
                                     <img src="images/services/2.png" alt="">
@@ -300,7 +300,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-md d-flex align-items-stretch ftco-animate">
                             <div class="singleService">
                                 <div class="serImg">
                                     <img src="images/services/3.png" alt="">
@@ -816,7 +816,7 @@
         <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="js/theme.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
 
     </body>
 </html>

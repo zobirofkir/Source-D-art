@@ -48,17 +48,15 @@
 					<footer id="footer" class="panel">
 						
 							<nav class="navbar">
-								
+								<!--
 								<ul class="ul">
-									<li><a href="../">Accueil</a></li>
-									<li><a href="../apropos.php">À propos </a></li>
-									<li><a href="../index.php#team">Nos-Équipe</a></li>
-									<li><a href="../portfolio.php">Nous faisons</a></li>
-									<li><a href="../work-detail.php?serv=<?php echo base64_encode("Events");?>">Services</a></li>
-									<li><a href="#">Videos</a></li>
-									<li><a href="../index.php#contact">Contact</a></li>
-
-								</ul>
+									<li><a href="">Accueil</a></li>
+									<li><a href="">À propos </a></li>
+									<li><a href="#team">Nos-Équipe</a></li>
+									<li><a href="">Nous faisons</a></li>
+									<li><a href="">Videos</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul> -->
 							</nav>
 						<div class="inner split">
 							<div>
