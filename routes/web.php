@@ -20,3 +20,4 @@ Route::post('/', [ContactController::class,'store'])->name('contact');
 
 Route::get("/apropos", [RouteController::class, 'apropos']);
 Route::get("/confidalite", [RouteController::class, 'confidalite']);
+Route::get("/url", [RouteController::class, 'url']);

@@ -15,4 +15,7 @@ class RouteController extends Controller
     public function confidalite(){
         return view("confidalite.confidalite");
     }
+    public function url(){
+        return view("url.url");
+    }
 }
