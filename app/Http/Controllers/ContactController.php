@@ -9,6 +9,13 @@ use App\Mail\ContactFormSubmitted;
 
 class ContactController extends Controller
 {
+    private $contact;
+
+    public function __construct(Contact $contact){
+        $this->contact = $contact;
+    }
+
+
     /**
      * Display a listing of the resource.
      */
@@ -38,16 +45,15 @@ class ContactController extends Controller
             "message" => "required",
         ]);
     
-        $data = new Contact();
-        $data->name = $request->name;
-        $data->phone = $request->phone;
-        $data->email = $request->email;
-        $data->company = $request->company; // Assuming you have a 'company' field in your Contact model
-        $data->message = $request->message;
+        $this->contact->name = $request->name;
+        $this->contact->phone = $request->phone;
+        $this->contact->email = $request->email;
+        $this->contact->company = $request->company; // Assuming you have a 'company' field in your Contact model
+        $this->contact->message = $request->message;
     
-        if ($data->save()) {
+        if ($this->contact->save()) {
             // Send email
-            Mail::to('sourcedart.itservices.event@gmail.com')->send(new ContactFormSubmitted($data));
+            Mail::to('sourcedart.itservices.event@gmail.com')->send(new ContactFormSubmitted($this->contact));
     
             $response = "We will contact you soon";
             return view('welcome', compact('response'));
